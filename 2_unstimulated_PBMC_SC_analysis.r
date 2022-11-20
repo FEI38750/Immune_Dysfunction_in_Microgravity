@@ -8,6 +8,9 @@ Sample.combined <- PrepSCTFindMarkers(Sample.combined)
 # find markers for every cluster compared to all remaining cells
 plan("multisession", workers = 16)
 options(future.globals.maxSize= +Inf) # increase maxSize of future function
+# find markers for each predicted cell type
+markers.all.celltype <- FindAllMarkers(Sample.combined, assay = "SCT", min.pct = 0.1, logfc.threshold = 0.25)
+write.csv(markers.all.celltype, "~/scRNAseq_analysis/markers_all_celltype.csv")
 
 Idents(Sample.combined)<-"treatment"
 # gene DEGs/markers of uG vs 1G unstimulated PBMCs
