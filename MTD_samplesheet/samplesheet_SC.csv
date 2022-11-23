@@ -1,0 +1,17 @@
+fastq_files,host_matrix_folder
+~/scRNAseq_analysis/MTD/fastq/Microgravity_uG_un-simulated_S4_L001_R1.fastq,~/scRNAseq_analysis/MTD/Microgravity_uG_unstimulated
+~/scRNAseq_analysis/MTD/fastq/Microgravity_uG_un-simulated_S4_L001_R2.fastq,~/scRNAseq_analysis/MTD/Microgravity_uG_unstimulated
+~/scRNAseq_analysis/MTD/fastq/Microgravity_uG_un-simulated_S4_L002_R1.fastq,~/scRNAseq_analysis/MTD/Microgravity_uG_unstimulated
+~/scRNAseq_analysis/MTD/fastq/Microgravity_uG_un-simulated_S4_L002_R2.fastq,~/scRNAseq_analysis/MTD/Microgravity_uG_unstimulated
+~/scRNAseq_analysis/MTD/fastq/Microgravity_uG_simulated_S2_L001_R1.fastq,~/scRNAseq_analysis/MTD/Microgravity_uG_stimulated
+~/scRNAseq_analysis/MTD/fastq/Microgravity_uG_simulated_S2_L001_R2.fastq,~/scRNAseq_analysis/MTD/Microgravity_uG_stimulated
+~/scRNAseq_analysis/MTD/fastq/Microgravity_uG_simulated_S2_L002_R1.fastq,~/scRNAseq_analysis/MTD/Microgravity_uG_stimulated
+~/scRNAseq_analysis/MTD/fastq/Microgravity_uG_simulated_S2_L002_R2.fastq,~/scRNAseq_analysis/MTD/Microgravity_uG_stimulated
+~/scRNAseq_analysis/MTD/fastq/Control_1G_un-stimulated_S3_L001_R1.fastq,~/scRNAseq_analysis/MTD/Control_1G_unstimulated
+~/scRNAseq_analysis/MTD/fastq/Control_1G_un-stimulated_S3_L001_R2.fastq,~/scRNAseq_analysis/MTD/Control_1G_unstimulated
+~/scRNAseq_analysis/MTD/fastq/Control_1G_un-stimulated_S3_L002_R1.fastq,~/scRNAseq_analysis/MTD/Control_1G_unstimulated
+~/scRNAseq_analysis/MTD/fastq/Control_1G_un-stimulated_S3_L002_R2.fastq,~/scRNAseq_analysis/MTD/Control_1G_unstimulated
+~/scRNAseq_analysis/MTD/fastq/Control_1G_stimulated_S1_L001_R1.fastq,~/scRNAseq_analysis/MTD/Control_1G_stimulated
+~/scRNAseq_analysis/MTD/fastq/Control_1G_stimulated_S1_L001_R2.fastq,~/scRNAseq_analysis/MTD/Control_1G_stimulated
+~/scRNAseq_analysis/MTD/fastq/Control_1G_stimulated_S1_L002_R1.fastq,~/scRNAseq_analysis/MTD/Control_1G_stimulated
+~/scRNAseq_analysis/MTD/fastq/Control_1G_stimulated_S1_L002_R2.fastq,~/scRNAseq_analysis/MTD/Control_1G_stimulated

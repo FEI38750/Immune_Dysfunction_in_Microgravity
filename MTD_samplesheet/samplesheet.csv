@@ -1,0 +1,13 @@
+sample_name,group,,comparisons,group1,vs,group2
+h1G_0720,oneG,,,uG,vs,oneG
+h1G_0807,oneG,,,oneG_Q,vs,oneG
+h1G_0810,oneG,,,uG_Q,vs,uG
+uG_0720,uG,,,uG_Q,vs,oneG
+uG_0807,uG,,,,,
+uG_0810,uG,,,,,
+h1GwQ0720,oneG_Q,,,,,
+h1GwQ_0807,oneG_Q,,,,,
+h1GwQ_0810,oneG_Q,,,,,
+uG_wQ_0720,uG_Q,,,,,
+uGwQ_0807,uG_Q,,,,,
+uGwQ_0810,uG_Q,,,,,
