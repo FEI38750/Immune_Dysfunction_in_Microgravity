@@ -7,6 +7,9 @@ library(ggplot2)
 library(sctransform)
 library(glmGamPoi)
 library(future)
+library(tibble)
+library(dplyr)
+library(parallel)
 # change the current plan to access parallelization
 plan("multisession", workers = 16)
 
@@ -37,18 +40,6 @@ Sample.list <- lapply(Sample.list, as.data.frame)
 for (i in 1:length(Sample.list)){
   colnames(Sample.list[[i]])<-gsub("-1","",colnames(Sample.list[[i]]))
 }
-## to uppercase the gene names
-library(tibble)
-library(dplyr)
-Uppercase <- function(df){
-  df<-add_column(df, NAME=toupper(row.names(df)), .before = 1)
-  df<-df %>% group_by(NAME) %>% summarise_all(list(mean)) #average the duplicated rows
-  df <- as.data.frame(df) # format tibble to dataframe
-  row.names(df) <- df[,1] # rename the row name with uppercased gene names
-  df <- df[,-1] # remove the "NAME" column
-}
-library(parallel)
-Sample.list<-mclapply(Sample.list,Uppercase, mc.cores=8)
 
 # Import MTD result
   # Female PBMC
