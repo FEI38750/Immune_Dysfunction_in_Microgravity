@@ -73,4 +73,5 @@ loaded via a namespace (and not attached):
 [118] minqa_1.2.4            carData_3.0-5          Rtsne_0.16            
 [121] shiny_1.7.2           
 
-For MTD, which is running under Conda environments, the versions of dependencies are in the .yml files in the MTD/Installation (https://github.com/FEI38750/MTD).
+MTD software and its instruction is on https://github.com/FEI38750/MTD
+MTD is running under Conda environments with Bash, the versions of dependencies are in the .yml files in the MTD/Installation.
