@@ -73,5 +73,11 @@ loaded via a namespace (and not attached):
 [118] minqa_1.2.4            carData_3.0-5          Rtsne_0.16            
 [121] shiny_1.7.2           
 
-MTD software and its instruction is on https://github.com/FEI38750/MTD<br>
-MTD is running under Conda environments with Bash, the versions of dependencies are in the .yml files in the MTD/Installation.
+Cellranger software and its instruction is on https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger </br>
+Seurat and its instruction is on https://satijalab.org/seurat/index.html</br>
+MTD software and its instruction is on https://github.com/FEI38750/MTD MTD is running under Conda environments with Bash, its versions of dependencies are in the .yml files in the MTD/Installation.
+
+Raw and processed 10x Genomics and bulk RNA-seq data can be found at Gene Expression Omnibus (GEO) using accession number GSE218937.
+
+To start from the reads count matrixes, we recommend to use desktop with 128GB RAM and 8 CPUs or HPC to run the scripts.</br>
+To start from the fastq files, we recommend to use desktop with 160GB RAM and 16 CPUs or HPC to run the scripts.
