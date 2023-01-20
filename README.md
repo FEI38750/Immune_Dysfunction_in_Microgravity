@@ -79,5 +79,5 @@ MTD software and its instruction is on https://github.com/FEI38750/MTD MTD is ru
 
 Raw and processed 10x Genomics and bulk RNA-seq data can be found at Gene Expression Omnibus (GEO) using accession number GSE218937.
 
-To start from the reads count matrixes, we recommend to use desktop with 128GB RAM and 8 CPUs or HPC to run the scripts.</br>
-To start from the fastq files, we recommend to use desktop with 160GB RAM and 16 CPUs or HPC to run the scripts.
+To start from the reads count matrixes, we recommend to use desktop with 128GB RAM and 8 CPUs or HPC to run the scripts. (from step1: 1_Preprocess_the_count_matrix.r) </br>
+To start from the fastq files, we recommend to use desktop with 160GB RAM and 16 CPUs or HPC to run the scripts. (from step0: 0_CountMatrix_making.sh)
