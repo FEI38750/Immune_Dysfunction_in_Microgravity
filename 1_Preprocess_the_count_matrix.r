@@ -14,7 +14,7 @@ library(parallel)
 plan("multisession", workers = 16)
 
 setwd("~/scRNAseq_analysis/PBMC_microgravity")
-# import 10X results
+# import 10X results: the folder contains thress files - barcodes.tsv.gz, features.tsv.gz, matrix.mtx.gz
   # Female PBMC
 F.uG_unstimulated <- Read10X(data.dir = "~/scRNAseq_runs/scRNA_hPBMCmicrogravity_050622/Microgravity_uG_un-simulated/outs/filtered_feature_bc_matrix/")
 F.uG_stimulated <- Read10X(data.dir = "~/scRNAseq_runs/scRNA_hPBMCmicrogravity_050622/Microgravity_uG_simulated/outs/filtered_feature_bc_matrix/")
