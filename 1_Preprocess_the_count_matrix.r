@@ -129,30 +129,7 @@ Sample.combined <- PrepSCTFindMarkers(Sample.combined)
 plan("multisession", workers = 32)
 markers.all <- FindAllMarkers(Sample.combined, assay = "SCT", min.pct = 0.1, logfc.threshold = 0.25)
 
-# Cell type annotation by SingleR
-library(SingleR)
-monaco.ref <- celldex::MonacoImmuneData()
-ImmGen.ref <- celldex::ImmGenData()
-# set the active assay back to “RNA,” and re-do the normalization
-DefaultAssay(Sample.combined) <- "RNA"
-Sample.combined <- NormalizeData(Sample.combined)
-# convert Seurat object to single cell experiment (SCE) for convenience
-sce <- as.SingleCellExperiment(DietSeurat(Sample.combined))
-monaco.main <- SingleR(test = sce,assay.type.test = 1,ref = monaco.ref,labels = monaco.ref$label.main)
-monaco.fine <- SingleR(test = sce,assay.type.test = 1,ref = monaco.ref,labels = monaco.ref$label.fine)
-ImmGen.main <- SingleR(test = sce,assay.type.test = 1,ref = ImmGen.ref,labels = ImmGen.ref$label.main)
-ImmGen.fine <- SingleR(test = sce,assay.type.test = 1,ref = ImmGen.ref,labels = ImmGen.ref$label.fine)
-# see the summary of general cell type annotations
-table(monaco.main$pruned.labels)
-table(monaco.fine$pruned.labels)
-table(ImmGen.main$pruned.labels)
-table(ImmGen.fine$pruned.labels)
-# add the annotations to the Seurat object metadata
-Sample.combined@meta.data$monaco.main <- monaco.main$pruned.labels
-Sample.combined@meta.data$monaco.fine <- monaco.fine$pruned.labels
-Sample.combined@meta.data$ImmGen.main <- ImmGen.main$pruned.labels
-Sample.combined@meta.data$ImmGen.fine <- ImmGen.fine$pruned.labels
-
+# Cell type annotation by Azimuth GUI
 # Import Azimuth annotation results
 predictions.azimuth<-data.frame()
 predictions.files<-list.files(path = '~/scRNAseq_analysis/PBMC_microgravity',pattern='*_azimuth_pred.tsv',full.names =T)
