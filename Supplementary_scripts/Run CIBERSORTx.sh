@@ -1,0 +1,1 @@
+docker run -v /opt/home/buckcenter.org/fwu/scRNAseq_analysis:/src/data -v /opt/home/buckcenter.org/fwu/scRNAseq_analysis/cybrsortx_unstim:/src/outdir cibersortx/fractions --username your_username --token your_token --single_cell TRUE --refsample PBMC_uG_unstim_counts_matrix.txt --mixture Bulk_PBMC_uG_counts_matrix.txt
