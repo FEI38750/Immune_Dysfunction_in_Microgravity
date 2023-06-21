@@ -162,7 +162,7 @@ EnhancedVolcano(markers.uGvs1G.stim.all.M.notaxid,
                 FCcutoff = 0.25,
                 labSize = 5, 
                 drawConnectors = T, arrowheads=F, min.segment.length=0.3,
-                title = "Female uG vs 1G",
+                title = "Male uG vs 1G",
                 subtitle = bquote(italic("stimulated PBMC")))
 ggsave("Male_uGvs1G_stimulated_Volcano.pdf",width=10,height=10)
 
