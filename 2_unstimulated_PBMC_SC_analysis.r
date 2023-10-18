@@ -29,8 +29,7 @@ markers.uGvs1G.unstim.all<-markers.uGvs1G.unstim.all[order(markers.uGvs1G.unstim
 write.csv(markers.uGvs1G.unstim, "markers_uGvs1G_390_unstimulated.csv")
 write.csv(markers.uGvs1G.unstim.all, "markers_uGvs1G_24K_unstimulated.csv")
 
-# save gene counts for iAge calculation
-write.csv(as.data.frame(Sample.combined@assays[["SCT"]]@data),"PBMC_SCT_data.csv")
+# save gene counts
 write.csv(as.data.frame(Sample.combined@meta.data),"PBMC_metadata.csv")
 
 # ------ Cell type ratio change stack barplot ------ #
